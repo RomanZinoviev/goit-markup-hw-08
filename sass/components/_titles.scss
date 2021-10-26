@@ -1,0 +1,11 @@
+.title {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.heading {
+  @include font(700, 36px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--title-text-color);
+}

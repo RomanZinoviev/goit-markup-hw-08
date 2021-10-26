@@ -1,0 +1,36 @@
+.wwd {
+  padding-top: 47px;
+}
+
+.wwd__list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.wwd__heading {
+  margin-bottom: 50px;
+}
+.wwd__item {
+  position: relative;
+
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.wwd__div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  @include flex-center();
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.wwd__text {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}

@@ -1,0 +1,15 @@
+.list-nav__link_current {
+  position: relative;
+
+  color: var(--link-color);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--link-color);
+    border-radius: 2px;
+  }
+}
