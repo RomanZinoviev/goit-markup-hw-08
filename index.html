@@ -10,15 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container menu">
+       
       <a href="./index.html" class="logo link header__logo"
         ><span class="logo__text">Web</span>Studio</a
       >
+      <button type="button" class="mobile-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg
+          class="mobile-menu-icon">
+          <use href="./images/icons.svg#icon-menu" />
+        </svg></button>
+      <div class="hidden-when-mobile">
       <nav class="navigation">
         <ul class="list-nav list">
           <li class="list-nav__right item">
@@ -46,6 +52,7 @@
           >
         </li>
       </ul>
+      </div>
       </div>
     </header>
     <main>
@@ -115,19 +122,19 @@
         <h2 class="wwd__heading heading">Чем мы занимаемся</h2>
         <ul class="wwd__list list">
           <li class="wwd__item item">
-            <img src="./images/box1.jpg" width="370" alt="печать текста" />
+            <img srcset="./images/box1-320.jpg 1x, ./images/box1-640.jpg 2x" src="./images/box1.jpg" width="370" alt="печать текста" />
             <div class="wwd__div">
               <p class="wwd__text">Десктопные приложения</p>
             </div>
           </li>
           <li class="wwd__item item">
-            <img src="./images/box2.jpg" width="370" alt="смартфон ноутбук" />
+            <img srcset="./images/box2-320.jpg 1x, ./images/box2-640.jpg 2x" src="./images/box2.jpg" width="370" alt="смартфон ноутбук" />
             <div class="wwd__div">
               <p class="wwd__text">Мобильные приложения</p>
             </div>
           </li>
           <li class="wwd__item item">
-            <img src="./images/box3.jpg" width="370" alt="планшет" />
+            <img srcset="./images/box3-320.jpg 1x, ./images/box3-640.jpg 2x" src="./images/box3.jpg" width="370" alt="планшет" />
             <div class="wwd__div">
               <p class="wwd__text">Дизайнерские решения</p>
             </div>
@@ -140,7 +147,7 @@
         <h2 class="team__heading heading">Наша команда</h2>
         <ul class="card list">
           <li class="card__item item">
-            <img src="./images/igord.jpg" width="270" alt="Игорь Демьяненко" />
+            <img srcset="./images/igord-320.jpg 1x, ./images/igord-640.jpg 2x" src="./images/igord.jpg" width="100%" alt="Игорь Демьяненко" />
             <div class="card__bottom"><p class="card__name">Игорь Демьяненко</p>
             <p class="card__text">Product Designer</p>
             <ul class="sociale-list list">
@@ -168,7 +175,7 @@
           </div>
           </li>
           <li class="card__item item">
-            <img src="./images/olgar.jpg" width="270" alt="Ольга Репина" />
+            <img srcset="./images/olgar-320.jpg 1x, ./images/olgar-640.jpg 2x" src="./images/olgar.jpg" width="100%" alt="Ольга Репина" />
             <div class="card__bottom"><p class="card__name">Ольга Репина</p>
             <p class="card__text">Frontend Developer</p>
           <ul class="sociale-list list">
@@ -196,7 +203,7 @@
         </div>
           </li>
           <li class="card__item item">
-            <img src="./images/kolyat.jpg" width="270" alt="Николай Тарасов" />
+            <img srcset="./images/kolyat-320.jpg 1x, ./images/kolyat-640.jpg 2x" src="./images/kolyat.jpg" width="100%" alt="Николай Тарасов" />
             <div class="card__bottom"><p class="card__name">Николай Тарасов</p>
             <p class="card__text">Marketing</p>
         <ul class="sociale-list list">
@@ -224,7 +231,7 @@
         </div>
           </li>
           <li class="card__item item">
-            <img src="./images/mixae.jpg" width="270" alt="Михаил Ермаков" />
+            <img srcset="./images/mixae-320.jpg 1x, ./images/mixae-640.jpg 2x"  src="./images/mixae.jpg" width="100%" alt="Михаил Ермаков" />
             <div class="card__bottom"><p class="card__name">Михаил Ермаков</p>
             <p class="card__text">UI Designer</p>
           <ul class="sociale-list list">
@@ -315,8 +322,35 @@
           </form>
           <button class="modal-button" data-modal-close><svg class=" icon icon-close"><use href="./images/icons.svg#icon-close-black"></use></svg></button></div></div>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-button js-close-menu"><svg class=" icon icon-close" >
+        <use href="./images/icons.svg#icon-close-black"></use>
+      </svg></button>
+      <ul class="mobile-menu">
+        <ul class="mobile-top list">
+          <li class="mobile-top-item item"><a href="./index.html" class="mobile-top-link link current">Студия</a></li>
+          <li class="mobile-top-item item"><a href="./portfolio.html" class="mobile-top-link link">Портфолио</a></li>
+          <li class="mobile-top-item item"><a href="" class="mobile-top-link link">Контакты</a></li>
+        </ul>
+        <ul class="mobile-contacts"> 
+          <li class="mobile-contacts-item mobile-contacts-tel item"><a href="tel:0961111111" class="mobile-contacts-link link">+380 96 11 11 111</a></li>
+          <li class="mobile-contacts-item mobile-contacts-mail item"><a href="mailto:info@devstudio.com" class="mobile-contacts-link link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-sociale">
+          <li class="mobile-sociale-item"><a href="" class="mobile-sociale-link">Instagram</a></li>
+          <li class="mobile-sociale-item"><a href="" class="mobile-sociale-link">Twitter</a></li>
+          <li class="mobile-sociale-item"><a href="" class="mobile-sociale-link">Facebook</a></li>
+          <li class="mobile-sociale-item"><a href="" class="mobile-sociale-link">LinkedIn</a></li>
+        </ul>
+      </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <footer class="footer">
       <div class="container footer__container">
+       <div class="footer-fortablet">
         <div class="footer__contacts">
       <a href="./index.html" class="logo footer__logo link"
         ><span class="logo__text">Web</span>Studio</a
@@ -363,17 +397,18 @@
               </svg></a>
           </li>
         </ul>
-       
       </div>
+      </div>
+      <div>
        <form class="footer-form">
          <p class="footer-form__text">Подпишитесь на рассылку</p>
          <div class="footer-form__div"><input type="email" name="email" placeholder="E-mail" class="footer-form__input"/>
          <button type="submit" class="footer-form__button button">Подписаться<svg class="form-footer__icon"><use href="./images/icons.svg#icon-send"/></svg></use></button></div>
 
         </form>
-      
+        </div>
       </div>
-    </footer>
+    </footer> 
     <script src="./js/modal.js"></script>
   </body>
 </html>
