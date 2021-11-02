@@ -48,7 +48,7 @@
           <a href="tel:0961111111" class="list-nav__link link header__link"><svg class="list-nav__icon" height="16" width="10">
             <use href=./images/icons.svg#icon-telephon></use>
           </svg>
-            096 111 11 11</a
+           +38 096 111 11 11</a
           >
         </li>
       </ul>
@@ -147,7 +147,10 @@
         <h2 class="team__heading heading">Наша команда</h2>
         <ul class="card list">
           <li class="card__item item">
-            <img srcset="./images/igord-320.jpg 1x, ./images/igord-640.jpg 2x" width="100%" src="./images/igord.jpg"  alt="Игорь Демьяненко" />
+            <picture><source srcset="./images/igordo-320.jpg 1x, ./images/igordo-640.jpg 2x" media="(min-width:1200px)" >
+              <source srcset="./images/igordt-320.jpg 1x, ./images/igordt-640.jpg 2x" media="(min-width:768px)" >
+              <source srcset="./images/igord-320.jpg 1x, ./images/igord-640.jpg 2x" media="(min-width:480px)">
+              <img   src="./images/igord.jpg"  alt="Игорь Демьяненко" /></picture>
             <div class="card__bottom"><p class="card__name">Игорь Демьяненко</p>
             <p class="card__text">Product Designer</p>
             <ul class="sociale-list list">
@@ -175,8 +178,13 @@
           </div>
           </li>
           <li class="card__item item">
-            <img srcset="./images/olgar-320.jpg 1x, ./images/olgar-640.jpg 2x" src="./images/olgar.jpg" width="100%" alt="Ольга Репина" />
-            <div class="card__bottom"><p class="card__name">Ольга Репина</p>
+            <picture>
+              <source srcset="./images/olgaro-320.jpg 1x, ./images/olgaro-640.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/olgart-320.jpg 1x, ./images/olgart-640.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/olgar-320.jpg 1x, ./images/olgar-640.jpg 2x" media="(min-width:480px)">
+              <img src="./images/olgar.jpg"  alt="Ольга Репина" />
+            </picture>
+           <div class="card__bottom"><p class="card__name">Ольга Репина</p>
             <p class="card__text">Frontend Developer</p>
           <ul class="sociale-list list">
             <li class="sociale-list__item item">
@@ -203,7 +211,12 @@
         </div>
           </li>
           <li class="card__item item">
-            <img srcset="./images/kolyat-320.jpg 1x, ./images/kolyat-640.jpg 2x" src="./images/kolyat.jpg" width="100%" alt="Николай Тарасов" />
+            <picture>
+              <source srcset="./images/kolyato-320.jpg 1x, ./images/kolyato-640.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/kolyatt-320.jpg 1x, ./images/kolyatt-640.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/kolyat-320.jpg 1x, ./images/kolyat-640.jpg 2x" media="(min-width:480px)">
+              <img src="./images/kolyat.jpg"  alt="Николай Тарасов" />
+            </picture>
             <div class="card__bottom"><p class="card__name">Николай Тарасов</p>
             <p class="card__text">Marketing</p>
         <ul class="sociale-list list">
@@ -231,7 +244,12 @@
         </div>
           </li>
           <li class="card__item item">
-            <img srcset="./images/mixae-320.jpg 1x, ./images/mixae-640.jpg 2x"  src="./images/mixae.jpg" width="100%" alt="Михаил Ермаков" />
+            <picture>
+              <source srcset="./images/mixaeo-320.jpg 1x, ./images/mixaeo-640.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/mixaet-320.jpg 1x, ./images/mixaet-640.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/mixae-320.jpg 1x, ./images/mixae-640.jpg 2x" media="(min-width:480px)">
+              <img src="./images/mixae.jpg"  alt="Михаил Ермаков" />
+            </picture>
             <div class="card__bottom"><p class="card__name">Михаил Ермаков</p>
             <p class="card__text">UI Designer</p>
           <ul class="sociale-list list">
@@ -326,12 +344,13 @@
       <button class="mobile-button js-close-menu"><svg class=" icon icon-close" >
         <use href="./images/icons.svg#icon-close-black"></use>
       </svg></button>
-      <ul class="mobile-menu">
+      <div class="mobile-menu">
         <ul class="mobile-top list">
           <li class="mobile-top-item item"><a href="./index.html" class="mobile-top-link link current">Студия</a></li>
           <li class="mobile-top-item item"><a href="./portfolio.html" class="mobile-top-link link">Портфолио</a></li>
           <li class="mobile-top-item item"><a href="" class="mobile-top-link link">Контакты</a></li>
         </ul>
+        <div class="mobile-menu-bottom">
         <ul class="mobile-contacts"> 
           <li class="mobile-contacts-item mobile-contacts-tel item"><a href="tel:0961111111" class="mobile-contacts-link link">+380 96 11 11 111</a></li>
           <li class="mobile-contacts-item mobile-contacts-mail item"><a href="mailto:info@devstudio.com" class="mobile-contacts-link link">info@devstudio.com</a></li>
@@ -342,7 +361,8 @@
           <li class="mobile-sociale-item"><a href="" class="mobile-sociale-link">Facebook</a></li>
           <li class="mobile-sociale-item"><a href="" class="mobile-sociale-link">LinkedIn</a></li>
         </ul>
-      </ul>
+        </div>
+      </div>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
@@ -368,7 +388,7 @@
         </li>
         <li class="footer-list__item">
           <a href="tel:0961111111" class="footer-list__link link ">
-            096 111 11 11</a
+           +38 096 111 11 11</a
           >
         </li>
       </ul>

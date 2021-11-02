@@ -1,5 +1,7 @@
 .solution {
-  padding-bottom: 48px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 48px;
+  }
 }
 
 .solution__title {
