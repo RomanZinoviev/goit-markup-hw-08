@@ -885,6 +885,12 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .solution__title {
+    text-align: center;
+  }
+}
+
 .solution__text {
   font-weight: 400;
   font-size: 14px;
@@ -893,16 +899,20 @@ body {
   text-align: left;
 }
 
+.solution__list {
+  margin-top: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .solution__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;
   }
 }
 
 .solution__item {
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -915,7 +925,6 @@ body {
 @media screen and (min-width: 768px) {
   .solution__item {
     margin-left: 30px;
-    margin-top: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 }
@@ -1150,8 +1159,9 @@ body {
 .clients__link {
   display: inline-block;
   height: 92px;
-  width: 170px;
+  width: 100%;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
