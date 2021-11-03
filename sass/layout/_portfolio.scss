@@ -73,6 +73,7 @@
 .sites-div-text {
   @include font(400, 18px, 1.56, 0.03em);
   color: var(--primary-background-color);
+  text-align: left;
 }
 
 .sites-list-left {
